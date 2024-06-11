@@ -44,7 +44,7 @@ const Layout = () => {
               <Input placeholder={"Email Address"} name={"email"} type={"text"} className={"w-[100%] h-[2.3rem] px-3 rounded-md text-white bg-darkBlue mb-3 outline-none"} />
               <Input placeholder={"Password"} name={"password"} type={"password"} className={"w-[100%] h-[2.3rem] px-3 rounded-md text-white bg-darkBlue mb-3 outline-none"} />
               <Button onClickFunc={() => nav("/home")} title={"Login"} className={"w-[100%] h-[2.3rem] rounded-md text-white bg-lightOrange"} />
-              <p onClick={() => nav("/forget-password")} className='text-white text-center mt-3'>Lost your password ?</p>
+              <p onClick={() => nav("/forget")} className='text-white text-center mt-3 cursor-pointer'>Lost your password ?</p>
             </form>
           </div>
           <div className='w-[80%] md:w-[100%] px-[2rem] py-[2rem] rounded-md'>

@@ -8,7 +8,7 @@ export default {
     extend: {
       colors:{
         darkBlue:"#102F47",
-        ref:"#C53A33",
+        red:"#C53A33",
         lightOrange:"#E78530",
         lightYellow:"#F3C15F",
         lightPeach:"#E9E2BC",
