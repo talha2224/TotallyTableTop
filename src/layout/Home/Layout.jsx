@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom'
 import Button from '../../components/Button'
 import { BsMicFill } from 'react-icons/bs'
 import annoucementImage from '../../assets/annoucement.jpg'
+import connectImage from '../../assets/connect.svg'
+import announceImage from '../../assets/announce.svg'
 import Left from '../../components/Left'
 const Layout = () => {
 
@@ -33,9 +35,10 @@ const Layout = () => {
           </div>
 
           <div className='flex items-center gap-x-[1rem] my-[1rem]'>
-            <div className='w-[2rem] h-[2rem] rounded-full bg-red flex justify-center items-center'>
+              <img src={announceImage} alt="" />
+            {/* <div className='w-[2rem] h-[2rem] rounded-full bg-red flex justify-center items-center'>
               <BsMicFill className='text-white text-lg ml-[-1px]' />
-            </div>
+            </div> */}
             <p className='text-white'>Annoucements</p>
 
           </div>
@@ -47,11 +50,7 @@ const Layout = () => {
               <p className='text-darkBlue'>New feature added</p>
               <p className='text-darkBlue my-1'>Your account now support direct messaging</p>
             </div>
-
-            {/* <div className='flex items-center gap-x-4'>
-            <p className='text-white cursor-pointer'>Skip</p>
-            <Button title={"Complete Profile"} className={"w-[10rem] h-[2.3rem] rounded-md bg-transparent text-white border border-lightOrange"} />
-        </div> */}
+            <img src={connectImage} alt="" />
           </div>
         </div>
 
