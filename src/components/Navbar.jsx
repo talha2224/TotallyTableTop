@@ -23,12 +23,12 @@ const Navbar = ({ type }) => {
                                 <h1 className='text-2xl md:text-4xl text-lightOrange font-bold'>T</h1>
                             </div>
                             <div className='relative w-[18rem] sm:block hidden '>
-                                <Input onChangeFunc={(e) => setshowSuggestion(true)} type={"text"} name={"search"} placeholder={"Search for conventions or people"} className={"w-[18rem] outline-none h-[2.3rem] px-3 bg-darkBlue rounded-md text-white"} />
+                                <Input  onChangeFunc={(e) => setshowSuggestion(true)} type={"text"} name={"search"} placeholder={"Search for conventions or people"} className={"w-[18rem] outline-none h-[2.3rem] px-3 bg-darkBlue rounded-md text-white"} />
                                 {
                                     showSuggestion && (
                                         <div className=' absolute left-0 top-[3.4rem] w-full h-[fit] p-2 rounded-md bg-[#0d2539] z-50 border border-gray-300'>
-                                            <Link to={"/search"} className='text-white text-sm mb-2 cursor-pointer block'>Search for user named "Marry"</Link>
-                                            <Link to={"/search"} className='text-white text-sm cursor-pointer block '>Search for convention called "Marry"</Link>
+                                            <Link to={"/search/marry/user"} className='text-white text-sm mb-2 cursor-pointer block'>Search for user named "Marry"</Link>
+                                            <Link to={"/search/marry/convention"} className='text-white text-sm cursor-pointer block '>Search for convention called "Marry"</Link>
                                         </div>
                                     )
                                 }
