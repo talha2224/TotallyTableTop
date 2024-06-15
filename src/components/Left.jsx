@@ -11,7 +11,7 @@ const Left = () => {
             <div className='w-[100%] h-[1px] bg-lightGray mt-4 mb-4'></div>
             <Link className='block mb-2 text-white cursor-pointer' to={"/home"}>Home</Link>
             <Link className='block mb-2 text-white cursor-pointer' to={"/activity"}>Activity</Link>
-            <Link className='block mb-2 text-white cursor-pointer' to={"/home"}>Your conventions</Link>
+            <Link className='block mb-2 text-white cursor-pointer' to={"/user/convention"}>Your conventions</Link>
             <Link className='block mb-2 text-white cursor-pointer' to={"/home"}>Friends</Link>
             <Link className='block mb-2 text-white cursor-pointer' to={"/home"}>Profile</Link>
             <Link className='block mb-2 text-white cursor-pointer' to={"/home"}>Settings</Link>
