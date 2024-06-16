@@ -39,9 +39,9 @@ const Navbar = ({ type }) => {
                             <div className='w-[2.3rem] h-[2.3rem] rounded-full flex justify-center items-center bg-darkBlue'>
                                 <BiSolidMessage className='text-lg text-white' />
                             </div>
-                            <div className='w-[2.3rem] h-[2.3rem] rounded-full flex justify-center items-center bg-darkBlue'>
+                            <Link to={"/notification"} className='w-[2.3rem] h-[2.3rem] rounded-full flex justify-center items-center bg-darkBlue'>
                                 <FaBell className='text-lg text-white' />
-                            </div>
+                            </Link>
                             <div className=' relative flex justify-between items-center px-2 rounded-xl py-1 bg-darkBlue w-[10rem] cursor-pointer'>
                                 <div onClick={() => setshowMenu(!showMenu)} className='flex gap-x-3 items-center'>
                                     <p className='text-white'>Helen</p>

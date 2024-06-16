@@ -19,6 +19,11 @@ import AccomodationPage from '../pages/AccomodationPage'
 import CreateAccomodationPage from '../pages/CreateAccomodationPage'
 import EventPage from '../pages/EventPage'
 import CreateEventPage from '../pages/CreateEventPage'
+import GamesPage from '../pages/GamesPage'
+import CreateGamePage from '../pages/CreateGamePage'
+import SingleGamePage from '../pages/SingleGamePage'
+import FriendPage from '../pages/FriendPage'
+import NotificationPage from '../pages/NotificationPage'
 export const routing = [
     {id:1,link:"/",element:<LoginPage/>},
     {id:2,link:"/register",element:<RegisterInfo/>},
@@ -41,4 +46,9 @@ export const routing = [
     {id:19,link:"/new/accomodation",element:<CreateAccomodationPage/>},
     {id:20,link:"/event",element:<EventPage/>},
     {id:21,link:"/new/event",element:<CreateEventPage/>},
+    {id:22,link:"/game/sale",element:<GamesPage/>},
+    {id:23,link:"/new/game",element:<CreateGamePage/>},
+    {id:24,link:"/game/single",element:<SingleGamePage/>},
+    {id:25,link:"/friends",element:<FriendPage/>},
+    {id:25,link:"/notification",element:<NotificationPage/>},
 ]

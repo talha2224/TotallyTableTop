@@ -4,7 +4,7 @@ import CreateEvent from '../layout/Events/CreateEvent'
 const CreateEventPage = () => {
   return (
     <div>
-        <CreateEvent/>
+      <CreateEvent />
     </div>
   )
 }
