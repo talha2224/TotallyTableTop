@@ -1,19 +1,26 @@
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import PCImage from '../../assets/Pc.png'
+import Calendar from '../../assets/calendar.svg'
+import Bag from '../../assets/bag.svg'
+import Connect from '../../assets/root.svg'
+import Agenda from '../../assets/agenda.svg'
+import Bed from '../../assets/bed.svg'
+import Clock from '../../assets/clock.svg'
 import FaceImage from '../../assets/face.avif'
 import { FaChevronDown } from 'react-icons/fa'
 import Button from '../../components/Button'
 import { useNavigate } from 'react-router-dom'
+
 const Info = () => {
     const nav = useNavigate()
     const data = [
-        { heading: "Manage conventions", desc: "Plan and manage your board game convention attendance through out the year." },
-        { heading: "Buy & Sell Games", desc: "Advertise board games the conventions you attend and get great deals on games." },
-        { heading: "Connect", desc: "Connect with friends." },
-        { heading: "Aggenda", desc: "Plan and manage your board game convention attendance through out the year." },
-        { heading: "Accomadtion", desc: "Advertise board games the conventions you attend and get great deals on games." },
-        { heading: "Events", desc: "Plan and manage your board game convention attendance through out the year." },
+        {image:Calendar,heading: "Manage conventions", desc: "Plan and manage your board game convention attendance through out the year." },
+        {image:Bag,heading: "Buy & Sell Games", desc: "Advertise board games the conventions you attend and get great deals on games." },
+        {image:Connect,heading: "Connect", desc: "Connect with friends." },
+        {image:Agenda,heading: "Aggenda", desc: "Plan and manage your board game convention attendance through out the year." },
+        {image:Bed,heading: "Accomadtion", desc: "Advertise board games the conventions you attend and get great deals on games." },
+        {image:Clock,heading: "Events", desc: "Plan and manage your board game convention attendance through out the year." },
 
     ]
     return (
@@ -22,8 +29,12 @@ const Info = () => {
             <header className='flex justify-center items-center md:flex-row flex-col bg-darkBlue p-[1rem] md:p-[2rem] gap-x-[4rem]'>
                 <div className=''>
                     <h1 className='text-3xl font-semibold text-white'>Why Create An Account ?</h1>
-                    <p className='text-white mt-4 w-[100%] md:w-[50%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vel quia sed neque nihil esse laborum itaque veniam ex provident expedita dolore, odit debitis reiciendis alias, qui rerum temporibus illo?</p>
-                    <p className='text-white mt-4 w-[100%] md:w-[50%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vel quia sed neque nihil esse laborum itaque veniam ex provident expedita dolore, odit debitis reiciendis alias, qui rerum temporibus illo?</p>
+                    <p className='text-white mt-4 w-[100%] md:w-[60%]'>Effectively organize your time at conventions so you can get the most out of each day </p>
+                    <p className='text-white mt-4 w-[100%] md:w-[60%]'>Shows your friends which conventions your are attending for next 12 months </p>
+                    <p className='text-white mt-4 w-[100%] md:w-[60%]'>Show weeks in advance the list of games you have for sale at an upcoming convention</p>
+                    <p className='text-white mt-4 w-[100%] md:w-[60%]'>Create a personalized agenda for all the stands you wish to visit a convention </p>
+                    <p className='text-white mt-4 w-[100%] md:w-[60%]'>Directly connect with friends at the convention and set a time to play games together</p>
+                    <p className='text-white mt-4 w-[100%] md:w-[60%]'>Share your accomodation information with your friends too keep the gaming going till late </p>
                     <div className='flex gap-x-[1rem] md:gap-x-[2rem] items-center mt-4'>
                         <div>
                             <Button onClickFunc={() => nav("/register-form")} title={"Create an account"} className={"w-[10rem] text-sm md:w-[13rem] h-[2.3rem] rounded-md text-white bg-lightOrange"} />
@@ -47,7 +58,8 @@ const Info = () => {
                     {
                         data.map((i, index) => (
                             <div key={index} className='flex justify-center items-center flex-col mb-[1.5rem]'>
-                                <div className='w-[4rem] h-[4rem] rounded-full bg-lightYellow'></div>
+                                <div className='w-[4rem] h-[4rem] rounded-full bg-lightYellow flex justify-center items-center'>
+                                    <img src={i.image} alt="" />                                </div>
                                 <h1 className='mt-2 text-white text-3xl'>{i.heading}</h1>
                                 <p className='mt-2 text-white w-[20rem]'>{i.desc}</p>
                             </div>

@@ -36,9 +36,9 @@ const Navbar = ({ type }) => {
                         </div>
 
                         <div className='flex gap-x-[1rem] items-center w-fit'>
-                            <div className='w-[2.3rem] h-[2.3rem] rounded-full flex justify-center items-center bg-darkBlue'>
+                            <Link to={"/messages"} className='w-[2.3rem] h-[2.3rem] rounded-full flex justify-center items-center bg-darkBlue'>
                                 <BiSolidMessage className='text-lg text-white' />
-                            </div>
+                            </Link>
                             <Link to={"/notification"} className='w-[2.3rem] h-[2.3rem] rounded-full flex justify-center items-center bg-darkBlue'>
                                 <FaBell className='text-lg text-white' />
                             </Link>

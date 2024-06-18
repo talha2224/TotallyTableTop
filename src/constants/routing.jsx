@@ -24,6 +24,11 @@ import CreateGamePage from '../pages/CreateGamePage'
 import SingleGamePage from '../pages/SingleGamePage'
 import FriendPage from '../pages/FriendPage'
 import NotificationPage from '../pages/NotificationPage'
+import SalesPage from '../pages/SalesPage'
+import FeedPage from '../pages/FeedPage'
+import ProfilePage from '../pages/ProfilePage'
+import MessagesPage from '../pages/MessagesPage'
+import SettingsPage from '../pages/SettingsPage'
 export const routing = [
     {id:1,link:"/",element:<LoginPage/>},
     {id:2,link:"/register",element:<RegisterInfo/>},
@@ -50,5 +55,12 @@ export const routing = [
     {id:23,link:"/new/game",element:<CreateGamePage/>},
     {id:24,link:"/game/single",element:<SingleGamePage/>},
     {id:25,link:"/friends",element:<FriendPage/>},
-    {id:25,link:"/notification",element:<NotificationPage/>},
+    {id:26,link:"/notification",element:<NotificationPage/>},
+    {id:27,link:"/sales",element:<SalesPage/>},
+    {id:28,link:"/feed",element:<FeedPage/>},
+    {id:29,link:"/profile",element:<ProfilePage/>},
+    {id:30,link:"/ownFeed",element:<FeedPage/>},
+    {id:31,link:"/messages",element:<MessagesPage/>},
+    {id:32,link:"/settings",element:<SettingsPage/>},
+
 ]

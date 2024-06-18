@@ -27,7 +27,7 @@ const Layout = () => {
                         <div className='flex items-center gap-x-4 sm:mt-0 mt-2'>
                             <Button title={"Online"} className={'w-[8rem] h-[2.3rem] rounded-md text-white border border-lightOrange'} />
                             <Button title={"Offline"} className={'w-[8rem] h-[2.3rem] rounded-md text-white border border-lightOrange'} />
-                            <Button title={"Post update"} className={'w-[8rem] h-[2.3rem] rounded-md text-white border border-lightOrange'} />
+                            <Button onClickFunc={()=>nav("/feed")} title={"Post update"} className={'w-[8rem] h-[2.3rem] rounded-md text-white border border-lightOrange'} />
 
                         </div>
                     </div>
