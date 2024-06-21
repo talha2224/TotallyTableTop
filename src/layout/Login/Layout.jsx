@@ -3,6 +3,9 @@ import { TiTick } from 'react-icons/ti'
 import Button from '../../components/Button'
 import Input from '../../components/Input'
 import { useNavigate } from 'react-router-dom'
+import Logo from '../../assets/logo.png'
+import Calendar from '../../assets/calendar.svg'
+
 const Layout = () => {
   const nav = useNavigate()
   const data = ["Plan and manage convention attendance", "Buy and sell board games", "Connect and share with friends"]
@@ -15,10 +18,10 @@ const Layout = () => {
         <div className='md:w-fit w-[100%] md:block flex  flex-col items-center'>
           {/* LOGO  */}
           <div className='w-[4rem] h-[4rem] rounded-full bg-lightOrange flex justify-center items-center mb-[2rem]'>
-            <h1 className='text-4xl text-lightYellow font-bold'>T</h1>
+            <img src={Logo} alt="" className='h-[2.7rem]' />
           </div>
           {/* HEADING  */}
-          <h1 className='text-3xl text-white font-semibold mb-[2.4rem]'>Totally Table Top</h1>
+          <h1 className='text-3xl text-white font-semibold mb-[2.4rem]'>Totally TableTop</h1>
 
           {/* TICK  */}
           {
@@ -34,7 +37,18 @@ const Layout = () => {
             ))
           }
 
-          <p className='text-white mt-[1rem] md:flex hidden'>Find out more</p>
+          <div className='md:flex hidden gap-x-5 items-center mt-2 '>
+            <div className='w-[rem] h-[rem] flex justify-center items-center rounded-full'>
+              <img src={Calendar} alt="" className='w-[1.3rem] h-[1.3rem]' />
+            </div>
+            <div>
+              <p className='text-white'>Plan and manage your time at every board game convention.</p>
+            </div>
+          </div>
+
+
+
+          {/* <p className='text-white mt-[1rem] md:flex hidden'>Find out more</p> */}
 
         </div>
 

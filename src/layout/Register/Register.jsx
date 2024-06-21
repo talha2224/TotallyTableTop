@@ -58,7 +58,7 @@ const Register = () => {
                     <p className='text-lightGray cursor-pointer text-nowrap'>Terms</p>
                     <p className='text-lightGray cursor-pointer text-nowrap'>Cookies</p>
                     <p className='text-lightGray cursor-pointer text-nowrap'>Privacy</p>
-                    <p className='text-lightGray cursor-pointer text-nowrap'>Help & Support</p>
+                    {/* <p className='text-lightGray cursor-pointer text-nowrap'>Help & Support</p> */}
                 </div>
             </div>
         </div>
