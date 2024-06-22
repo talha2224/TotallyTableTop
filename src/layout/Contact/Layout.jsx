@@ -9,7 +9,7 @@ const Layout = () => {
       <Navbar/>
 
       <div className='w-screen flex justify-center items-center'>
-        <div className='w-[40%] p-4 bg-[#0d2539] rounded-md mt-2 mb-2'>
+        <div className='w-[95%] sm:w-[80%] md:w-[40%] p-4 bg-[#0d2539] rounded-md mt-2 mb-2'>
             <h1 className='text-xl text-white'>Contact Tottaly TableTop</h1>
             <p className='text-white mt-1'>All fields are required</p>
             <form action="" className='mt-2'>
