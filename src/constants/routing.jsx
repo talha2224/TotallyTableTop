@@ -29,6 +29,11 @@ import FeedPage from '../pages/FeedPage'
 import ProfilePage from '../pages/ProfilePage'
 import MessagesPage from '../pages/MessagesPage'
 import SettingsPage from '../pages/SettingsPage'
+import ContactPage from '../pages/ContactPage'
+import StayingSafePage from '../pages/StayingSafePage'
+import TermsPage from '../pages/TermsPage'
+import CookiesPage from '../pages/CookiesPage'
+import PrivacyPage from '../pages/PrivacyPage'
 export const routing = [
     {id:1,link:"/",element:<LoginPage/>},
     {id:2,link:"/register",element:<RegisterInfo/>},
@@ -62,5 +67,10 @@ export const routing = [
     {id:30,link:"/ownFeed",element:<FeedPage/>},
     {id:31,link:"/messages",element:<MessagesPage/>},
     {id:32,link:"/settings",element:<SettingsPage/>},
+    {id:33,link:"/contact",element:<ContactPage/>},
+    {id:34,link:"/safe",element:<StayingSafePage/>},
+    {id:35,link:"/terms",element:<TermsPage/>},
+    {id:36,link:"/cookies",element:<CookiesPage/>},
+    {id:37,link:"/privacy",element:<PrivacyPage/>},
 
 ]

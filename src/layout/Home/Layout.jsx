@@ -7,6 +7,7 @@ import annoucementImage from '../../assets/annoucement.jpg'
 import connectImage from '../../assets/connect.svg'
 import announceImage from '../../assets/announce.svg'
 import Left from '../../components/Left'
+import Footer from '../../components/Footer'
 const Layout = () => {
 
   const nav = useNavigate()
@@ -58,19 +59,8 @@ const Layout = () => {
       </div>
 
       {/* footer  */}
-      <div className='bg-[#0d2539] w-[100%] p-[1rem] md:p-[2rem] flex justify-between items-center flex-wrap'>
-        <div className='w-[2rem] h-[2rem] rounded-full bg-lightYellow flex justify-center items-center mt-2'>
-          <h1 className='text-2xl text-lightOrange font-bold'>T</h1>
-        </div>
-        <div className='flex gap-x-3 items-center overflow-x-auto mt-2'>
-          <p className='text-lightGray cursor-pointer text-nowrap'>Contact us </p>
-          <p className='text-lightGray cursor-pointer text-nowrap'>Staying safe</p>
-          <p className='text-lightGray cursor-pointer text-nowrap'>Terms</p>
-          <p className='text-lightGray cursor-pointer text-nowrap'>Cookies</p>
-          <p className='text-lightGray cursor-pointer text-nowrap'>Privacy</p>
-          {/* <p className='text-lightGray cursor-pointer text-nowrap'>Help & Support</p> */}
-        </div>
-      </div>
+      <Footer/>
+
     </div>
   )
 }
